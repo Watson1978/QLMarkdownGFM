@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A993541B2079FD5800C69E0A /* cmark in Resources */ = {isa = PBXBuildFile; fileRef = A993541A2079FD5800C69E0A /* cmark */; };
+		A9493949207A37EE0086053A /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = A9493948207A37ED0086053A /* styles.css */; };
 		A993541E2079FD9300C69E0A /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = A993541C2079FD9200C69E0A /* markdown.h */; };
 		A993541F2079FD9300C69E0A /* markdown.m in Sources */ = {isa = PBXBuildFile; fileRef = A993541D2079FD9300C69E0A /* markdown.m */; };
-		A99354222079FE1900C69E0A /* libcmark-gfm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A99354212079FE1900C69E0A /* libcmark-gfm.a */; };
-		A99354242079FE1F00C69E0A /* libcmark-gfmextensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A99354232079FE1F00C69E0A /* libcmark-gfmextensions.a */; };
 		A9935426207A01D900C69E0A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9935425207A01D900C69E0A /* WebKit.framework */; };
+		A9EB9E9E207A51D800BAE9F7 /* libcmark-gfmextensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EB9E9C207A51D800BAE9F7 /* libcmark-gfmextensions.a */; };
+		A9EB9E9F207A51D800BAE9F7 /* libcmark-gfm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EB9E9D207A51D800BAE9F7 /* libcmark-gfm.a */; };
 		A9EEB58520791BAB00898B01 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEB58420791BAB00898B01 /* GenerateThumbnailForURL.m */; };
 		A9EEB58720791BAB00898B01 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEB58620791BAB00898B01 /* GeneratePreviewForURL.m */; };
 		A9EEB58920791BAB00898B01 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A9EEB58820791BAB00898B01 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A993541A2079FD5800C69E0A /* cmark */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmark; sourceTree = SOURCE_ROOT; };
+		A9493948207A37ED0086053A /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
 		A993541C2079FD9200C69E0A /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
 		A993541D2079FD9300C69E0A /* markdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = markdown.m; sourceTree = "<group>"; };
-		A99354212079FE1900C69E0A /* libcmark-gfm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcmark-gfm.a"; path = "cmark/lib/libcmark-gfm.a"; sourceTree = "<group>"; };
-		A99354232079FE1F00C69E0A /* libcmark-gfmextensions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcmark-gfmextensions.a"; path = "cmark/lib/libcmark-gfmextensions.a"; sourceTree = "<group>"; };
 		A9935425207A01D900C69E0A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A9EB9E9C207A51D800BAE9F7 /* libcmark-gfmextensions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcmark-gfmextensions.a"; path = "cmark/lib/libcmark-gfmextensions.a"; sourceTree = "<group>"; };
+		A9EB9E9D207A51D800BAE9F7 /* libcmark-gfm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcmark-gfm.a"; path = "cmark/lib/libcmark-gfm.a"; sourceTree = "<group>"; };
 		A9EEB58120791BAB00898B01 /* QLMarkdownGFM.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLMarkdownGFM.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EEB58420791BAB00898B01 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		A9EEB58620791BAB00898B01 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
@@ -38,8 +38,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9935426207A01D900C69E0A /* WebKit.framework in Frameworks */,
-				A99354222079FE1900C69E0A /* libcmark-gfm.a in Frameworks */,
-				A99354242079FE1F00C69E0A /* libcmark-gfmextensions.a in Frameworks */,
+				A9EB9E9E207A51D800BAE9F7 /* libcmark-gfmextensions.a in Frameworks */,
+				A9EB9E9F207A51D800BAE9F7 /* libcmark-gfm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,9 +49,9 @@
 		A99354202079FE1900C69E0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9EB9E9D207A51D800BAE9F7 /* libcmark-gfm.a */,
+				A9EB9E9C207A51D800BAE9F7 /* libcmark-gfmextensions.a */,
 				A9935425207A01D900C69E0A /* WebKit.framework */,
-				A99354212079FE1900C69E0A /* libcmark-gfm.a */,
-				A99354232079FE1F00C69E0A /* libcmark-gfmextensions.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,13 +76,13 @@
 		A9EEB58320791BAB00898B01 /* QLMarkdownGFM */ = {
 			isa = PBXGroup;
 			children = (
-				A993541A2079FD5800C69E0A /* cmark */,
 				A9EEB58420791BAB00898B01 /* GenerateThumbnailForURL.m */,
 				A9EEB58620791BAB00898B01 /* GeneratePreviewForURL.m */,
 				A993541C2079FD9200C69E0A /* markdown.h */,
 				A993541D2079FD9300C69E0A /* markdown.m */,
 				A9EEB58820791BAB00898B01 /* main.c */,
 				A9EEB58A20791BAB00898B01 /* Info.plist */,
+				A9493948207A37ED0086053A /* styles.css */,
 			);
 			path = QLMarkdownGFM;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A993541B2079FD5800C69E0A /* cmark in Resources */,
+				A9493949207A37EE0086053A /* styles.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

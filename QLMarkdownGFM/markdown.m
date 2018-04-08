@@ -29,21 +29,25 @@ NSData *renderHTML(NSURL *url)
     cmark_node *document = cmark_parser_finish(parser);
     char *output = cmark_render_html_with_mem(document, options, cmark_parser_get_syntax_extensions(parser), mem);
 
+    NSString *path = [[NSBundle bundleWithIdentifier: @"jp.cat-soft.QLMarkdownGFM"] pathForResource:@"styles" ofType:@"css"];
+    NSString *styles = [[NSString alloc] initWithContentsOfFile: path
+                                                       encoding: NSUTF8StringEncoding
+                                                          error: nil];
+    
     NSString *html = [NSString stringWithFormat:@"<!DOCTYPE html>\n"
                       "<html>\n"
                       "<head>\n"
                       "<meta charset='utf-8'>\n"
+                      "<style>%@</style>"
                       "<base href='%@'/>\n"
                       "</head>\n"
                       "<body>\n"
                       "%@"
                       "</body>\n"
                       "</html>",
-                      url, [NSString stringWithUTF8String:output]];
-    
+                      styles, url, [NSString stringWithUTF8String:output]];
 
     free(output);
-
     cmark_parser_free(parser);
     cmark_node_free(document);
     
