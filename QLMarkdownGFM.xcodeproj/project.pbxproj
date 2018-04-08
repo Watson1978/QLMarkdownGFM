@@ -297,6 +297,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/cmark/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.QLMarkdownGFM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
@@ -315,6 +316,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/cmark/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.QLMarkdownGFM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
