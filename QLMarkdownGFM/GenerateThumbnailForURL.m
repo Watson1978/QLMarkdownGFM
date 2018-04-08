@@ -1,6 +1,7 @@
 #import <Cocoa/Cocoa.h>
 #import <QuickLook/QuickLook.h>
 #import <WebKit/WebKit.h>
+#import "markdown.h"
 
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize);
 void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbnail);
@@ -13,8 +14,51 @@ void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbn
 
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize)
 {
-    // To complete your generator please implement the function GenerateThumbnailForURL in GenerateThumbnailForURL.c
-    return noErr;
+    @autoreleasepool {
+        NSData *data = renderHTML((__bridge NSURL*) url);
+        
+        if (data) {
+            NSRect viewRect = NSMakeRect(0.0, 0.0, 600.0, 800.0);
+            float scale = maxSize.height / 800.0;
+            NSSize scaleSize = NSMakeSize(scale, scale);
+            CGSize thumbSize = NSSizeToCGSize(
+                                              NSMakeSize((maxSize.width * (600.0/800.0)),
+                                                         maxSize.height));
+            
+            WebView* webView = [[WebView alloc] initWithFrame: viewRect];
+            [webView scaleUnitSquareToSize: scaleSize];
+            [[[webView mainFrame] frameView] setAllowsScrolling:NO];
+            [[webView mainFrame] loadData: data
+                                 MIMEType: @"text/html"
+                         textEncodingName: @"utf-8"
+                                  baseURL: nil];
+            
+            while([webView isLoading]) {
+                CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0, true);
+            }
+            
+            [webView display];
+            
+            CGContextRef context =
+            QLThumbnailRequestCreateContext(thumbnail, thumbSize, false, NULL);
+            
+            if (context) {
+                NSGraphicsContext* nsContext =
+                [NSGraphicsContext
+                 graphicsContextWithGraphicsPort: (void*) context
+                 flipped: [webView isFlipped]];
+                
+                [webView displayRectIgnoringOpacity: [webView bounds]
+                                          inContext: nsContext];
+                
+                QLThumbnailRequestFlushContext(thumbnail, context);
+                
+                CFRelease(context);
+            }
+        }
+        
+        return noErr;
+    }
 }
 
 void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbnail)
