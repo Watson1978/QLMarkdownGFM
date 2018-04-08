@@ -1,0 +1,5 @@
+cmark/bin
+cmark/share
+cmark/lib/*
+
+!cmark/lib/*.a
