@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A993541B2079FD5800C69E0A /* cmark in Resources */ = {isa = PBXBuildFile; fileRef = A993541A2079FD5800C69E0A /* cmark */; };
+		A993541E2079FD9300C69E0A /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = A993541C2079FD9200C69E0A /* markdown.h */; };
+		A993541F2079FD9300C69E0A /* markdown.m in Sources */ = {isa = PBXBuildFile; fileRef = A993541D2079FD9300C69E0A /* markdown.m */; };
+		A99354222079FE1900C69E0A /* libcmark-gfm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A99354212079FE1900C69E0A /* libcmark-gfm.a */; };
+		A99354242079FE1F00C69E0A /* libcmark-gfmextensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A99354232079FE1F00C69E0A /* libcmark-gfmextensions.a */; };
 		A9EEB58520791BAB00898B01 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = A9EEB58420791BAB00898B01 /* GenerateThumbnailForURL.c */; };
 		A9EEB58720791BAB00898B01 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = A9EEB58620791BAB00898B01 /* GeneratePreviewForURL.c */; };
 		A9EEB58920791BAB00898B01 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A9EEB58820791BAB00898B01 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A993541A2079FD5800C69E0A /* cmark */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmark; sourceTree = SOURCE_ROOT; };
+		A993541C2079FD9200C69E0A /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
+		A993541D2079FD9300C69E0A /* markdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = markdown.m; sourceTree = "<group>"; };
+		A99354212079FE1900C69E0A /* libcmark-gfm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcmark-gfm.a"; path = "cmark/lib/libcmark-gfm.a"; sourceTree = "<group>"; };
+		A99354232079FE1F00C69E0A /* libcmark-gfmextensions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcmark-gfmextensions.a"; path = "cmark/lib/libcmark-gfmextensions.a"; sourceTree = "<group>"; };
 		A9EEB58120791BAB00898B01 /* QLMarkdownGFM.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLMarkdownGFM.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EEB58420791BAB00898B01 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
 		A9EEB58620791BAB00898B01 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
@@ -25,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99354222079FE1900C69E0A /* libcmark-gfm.a in Frameworks */,
+				A99354242079FE1F00C69E0A /* libcmark-gfmextensions.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A99354202079FE1900C69E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A99354212079FE1900C69E0A /* libcmark-gfm.a */,
+				A99354232079FE1F00C69E0A /* libcmark-gfmextensions.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9EEB57720791BAB00898B01 = {
 			isa = PBXGroup;
 			children = (
 				A9EEB58320791BAB00898B01 /* QLMarkdownGFM */,
 				A9EEB58220791BAB00898B01 /* Products */,
+				A99354202079FE1900C69E0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,8 +72,11 @@
 		A9EEB58320791BAB00898B01 /* QLMarkdownGFM */ = {
 			isa = PBXGroup;
 			children = (
+				A993541A2079FD5800C69E0A /* cmark */,
 				A9EEB58420791BAB00898B01 /* GenerateThumbnailForURL.c */,
 				A9EEB58620791BAB00898B01 /* GeneratePreviewForURL.c */,
+				A993541C2079FD9200C69E0A /* markdown.h */,
+				A993541D2079FD9300C69E0A /* markdown.m */,
 				A9EEB58820791BAB00898B01 /* main.c */,
 				A9EEB58A20791BAB00898B01 /* Info.plist */,
 			);
@@ -65,6 +90,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A993541E2079FD9300C69E0A /* markdown.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A993541B2079FD5800C69E0A /* cmark in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A993541F2079FD9300C69E0A /* markdown.m in Sources */,
 				A9EEB58520791BAB00898B01 /* GenerateThumbnailForURL.c in Sources */,
 				A9EEB58720791BAB00898B01 /* GeneratePreviewForURL.c in Sources */,
 				A9EEB58920791BAB00898B01 /* main.c in Sources */,
@@ -258,8 +286,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = cmark/include;
 				INFOPLIST_FILE = QLMarkdownGFM/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cmark/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.QLMarkdownGFM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
@@ -271,8 +304,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = cmark/include;
 				INFOPLIST_FILE = QLMarkdownGFM/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/cmark/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.QLMarkdownGFM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
