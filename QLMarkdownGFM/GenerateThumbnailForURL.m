@@ -16,49 +16,13 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
 {
     @autoreleasepool {
         NSData *data = renderHTML((__bridge NSURL*) url);
-        
         if (data) {
-            NSRect viewRect = NSMakeRect(0.0, 0.0, 600.0, 800.0);
             float scale = maxSize.height / 800.0;
-            NSSize scaleSize = NSMakeSize(scale, scale);
-            CGSize thumbSize = NSSizeToCGSize(
-                                              NSMakeSize((maxSize.width * (600.0/800.0)),
-                                                         maxSize.height));
-            
-            WebView* webView = [[WebView alloc] initWithFrame: viewRect];
-            [webView scaleUnitSquareToSize: scaleSize];
-            [[[webView mainFrame] frameView] setAllowsScrolling:NO];
-            [[webView mainFrame] loadData: data
-                                 MIMEType: @"text/html"
-                         textEncodingName: @"utf-8"
-                                  baseURL: nil];
-            
-            while([webView isLoading]) {
-                CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0, true);
-            }
-            
-            [webView display];
-            
-            CGContextRef context =
-            QLThumbnailRequestCreateContext(thumbnail, thumbSize, false, NULL);
-            
-            if (context) {
-                NSGraphicsContext* nsContext =
-                [NSGraphicsContext
-                 graphicsContextWithGraphicsPort: (void*) context
-                 flipped: [webView isFlipped]];
-                
-                [webView displayRectIgnoringOpacity: [webView bounds]
-                                          inContext: nsContext];
-                
-                QLThumbnailRequestFlushContext(thumbnail, context);
-                
-                CFRelease(context);
-            }
+            NSDictionary *properties = @{ (id)kQLThumbnailOptionScaleFactorKey: @(scale) };
+            QLThumbnailRequestSetThumbnailWithDataRepresentation(thumbnail, (__bridge CFDataRef)data, kUTTypeHTML, NULL, (__bridge CFDictionaryRef)properties);
         }
-        
-        return noErr;
     }
+    return noErr;
 }
 
 void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbnail)
