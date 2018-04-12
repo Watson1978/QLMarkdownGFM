@@ -96,6 +96,16 @@ pre {
     word-wrap: normal;
 }
 
+dt {
+    font-style: italic;
+    font-weight: 600;
+}
+
+dd {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
 code,
 kbd,
 pre,
@@ -146,10 +156,24 @@ del code {
     vertical-align: text-top;
 }
 
-li.tasklist {
-    margin-left: -1.5em;
-    list-style-type: none;
+pre code {
+    font-size: 100%;
+    background-color: #f7f7f7;
 }
-li.tasklist input {
-    margin-right: 1em;
+
+li {
+    margin-left: 0;
+}
+
+.tasklist {
+    list-style-type: none;
+    margin-left: -1.5em;
+}
+
+.tasklist .tasklist {
+    margin: 0;
+}
+
+.tasklist ul li {
+    margin-left: 1em;
 }
