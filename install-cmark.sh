@@ -10,6 +10,6 @@ git checkout -b tasklist origin/tasklist
 mkdir build
 cd build
 
-cmake -DCMAKE_INSTALL_PREFIX=$PROJECT_DIR/cmark ..
+cmake -DCMAKE_INSTALL_PREFIX=$PROJECT_DIR/cmark -DCMAKE_OSX_DEPLOYMENT_TARGET=10.11 ..
 make -j
 make install
