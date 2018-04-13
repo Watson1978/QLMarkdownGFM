@@ -165,15 +165,19 @@ li {
     margin-left: 0;
 }
 
-.tasklist {
+.task-list-item {
     list-style-type: none;
     margin-left: -1.5em;
 }
 
-.tasklist .tasklist {
+.task-list-item .task-list-item {
     margin: 0;
 }
 
-.tasklist ul li {
+.task-list-item ul li {
     margin-left: 1em;
+}
+
+input[type=checkbox] {
+    margin-right: 8px;
 }

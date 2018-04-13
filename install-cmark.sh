@@ -13,3 +13,7 @@ cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$PROJECT_DIR/cmark -DCMAKE_OSX_DEPLOYMENT_TARGET=10.11 ..
 make -j
 make install
+
+rm -rf $PROJECT_DIR/cmark/bin
+rm -rf $PROJECT_DIR/cmark/share
+rm -rf $PROJECT_DIR/cmark/lib/*.dylib
