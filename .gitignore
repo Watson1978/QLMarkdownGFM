@@ -1,3 +1,4 @@
+build/
 cmark/bin
 cmark/share
 cmark/lib/*
