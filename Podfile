@@ -1,7 +1,7 @@
 platform :osx, '10.11'
 
 target 'QLMarkdownGFM' do
-  pod 'ZWEmoji', git: "https://github.com/zachwaugh/ZWEmoji.git"
+  pod 'ZWEmoji', git: "https://github.com/Watson1978/ZWEmoji.git"
 end
 
 # Workaround
