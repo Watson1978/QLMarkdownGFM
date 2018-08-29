@@ -1,0 +1,21 @@
+PODS:
+  - ZWEmoji (0.4.0)
+
+DEPENDENCIES:
+  - ZWEmoji (from `https://github.com/zachwaugh/ZWEmoji.git`)
+
+EXTERNAL SOURCES:
+  ZWEmoji:
+    :git: https://github.com/zachwaugh/ZWEmoji.git
+
+CHECKOUT OPTIONS:
+  ZWEmoji:
+    :commit: a3718f9bcdd482c8d3e06015cd8a7c592807954f
+    :git: https://github.com/zachwaugh/ZWEmoji.git
+
+SPEC CHECKSUMS:
+  ZWEmoji: 608d8984968113496814c7ee555ea72e23856bb2
+
+PODFILE CHECKSUM: 5d58f3ba1513afef9431cad2d6d2f6ad05925e6d
+
+COCOAPODS: 1.5.3
