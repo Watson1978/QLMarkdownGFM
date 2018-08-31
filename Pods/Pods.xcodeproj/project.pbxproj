@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B2C820DD308EF4CBA38250EF72B1824 /* ZWEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3FFF9DF755A80216FC2E9DABE00139 /* ZWEmoji.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2C7EE94F3EE5F5B096092EDE903D284E /* Pods-QLMarkdownGFM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1FFAA48B0D3E6B21C1CA1A71D43A /* Pods-QLMarkdownGFM-dummy.m */; };
+		B0EBF2DD1E5B644A6ECB73FFC78E710D /* ZWEmoji-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E02D6C588BEC59764AD446AB97E89 /* ZWEmoji-dummy.m */; };
+		F35D006921502CB9FE6128499A8256DF /* ZWEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0C8DEA60A944A0CB66635CEC6F07D3 /* ZWEmoji.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		705D4A424D19D9E14F75EB362FAC1AFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8903923D1ED2DA6DAA6C33228CCD51DC;
+			remoteInfo = ZWEmoji;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000F1BFAA4268074D26733140588E601 /* libPods-QLMarkdownGFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-QLMarkdownGFM.a"; path = "libPods-QLMarkdownGFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		033575AAA2999DC708A03B83C2B1A432 /* ZWEmoji-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWEmoji-prefix.pch"; sourceTree = "<group>"; };
+		19A3E94A2C2E5D44B7864B118F02EDD7 /* Pods-QLMarkdownGFM-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QLMarkdownGFM-resources.sh"; sourceTree = "<group>"; };
+		2125C12B6062F6DB79F36D268CDA968B /* Pods-QLMarkdownGFM-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QLMarkdownGFM-frameworks.sh"; sourceTree = "<group>"; };
+		243C1FFAA48B0D3E6B21C1CA1A71D43A /* Pods-QLMarkdownGFM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QLMarkdownGFM-dummy.m"; sourceTree = "<group>"; };
+		3B4613DB21AFA6BDBB2A74A10F9DA2B8 /* Pods-QLMarkdownGFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QLMarkdownGFM.release.xcconfig"; sourceTree = "<group>"; };
+		6515D3C9B3378AA8A94EA26C4AD61BA9 /* libZWEmoji.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZWEmoji.a; path = libZWEmoji.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D4CCF8C690BDAB5EC8616153218E591 /* Pods-QLMarkdownGFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QLMarkdownGFM.debug.xcconfig"; sourceTree = "<group>"; };
+		922E02D6C588BEC59764AD446AB97E89 /* ZWEmoji-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZWEmoji-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D0C8DEA60A944A0CB66635CEC6F07D3 /* ZWEmoji.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZWEmoji.h; path = lib/ZWEmoji.h; sourceTree = "<group>"; };
+		B4D7940AD87C30C8F127A6E325764AB9 /* ZWEmoji.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZWEmoji.xcconfig; sourceTree = "<group>"; };
+		B89658EFBDBEB368F41A84354EEE6460 /* Pods-QLMarkdownGFM-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QLMarkdownGFM-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C023B7E9B444555C29D141048F69B149 /* Pods-QLMarkdownGFM-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QLMarkdownGFM-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE3FFF9DF755A80216FC2E9DABE00139 /* ZWEmoji.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZWEmoji.m; path = lib/ZWEmoji.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E2C3673F0E149C961F6A8270DCF683E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C28245BED3C83CA0F63B36FB368039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0535DE29AA198C366ED672441D8CD2E8 /* Pods-QLMarkdownGFM */ = {
+			isa = PBXGroup;
+			children = (
+				B89658EFBDBEB368F41A84354EEE6460 /* Pods-QLMarkdownGFM-acknowledgements.markdown */,
+				C023B7E9B444555C29D141048F69B149 /* Pods-QLMarkdownGFM-acknowledgements.plist */,
+				243C1FFAA48B0D3E6B21C1CA1A71D43A /* Pods-QLMarkdownGFM-dummy.m */,
+				2125C12B6062F6DB79F36D268CDA968B /* Pods-QLMarkdownGFM-frameworks.sh */,
+				19A3E94A2C2E5D44B7864B118F02EDD7 /* Pods-QLMarkdownGFM-resources.sh */,
+				8D4CCF8C690BDAB5EC8616153218E591 /* Pods-QLMarkdownGFM.debug.xcconfig */,
+				3B4613DB21AFA6BDBB2A74A10F9DA2B8 /* Pods-QLMarkdownGFM.release.xcconfig */,
+			);
+			name = "Pods-QLMarkdownGFM";
+			path = "Target Support Files/Pods-QLMarkdownGFM";
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19C56C6BFF6049D42F3F36AACC08144F /* ZWEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				9D0C8DEA60A944A0CB66635CEC6F07D3 /* ZWEmoji.h */,
+				EE3FFF9DF755A80216FC2E9DABE00139 /* ZWEmoji.m */,
+				809D50BAF1CD0E977AD857653275357B /* Support Files */,
+			);
+			name = ZWEmoji;
+			path = ZWEmoji;
+			sourceTree = "<group>";
+		};
+		2DD5DEDB9CA3E483C39A21CF65B4BDD1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0535DE29AA198C366ED672441D8CD2E8 /* Pods-QLMarkdownGFM */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7C6FE31AADFA410F4889D911C3E5D5AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000F1BFAA4268074D26733140588E601 /* libPods-QLMarkdownGFM.a */,
+				6515D3C9B3378AA8A94EA26C4AD61BA9 /* libZWEmoji.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				DD46F7BC7E174B81C5122E1236B9F288 /* Pods */,
+				7C6FE31AADFA410F4889D911C3E5D5AA /* Products */,
+				2DD5DEDB9CA3E483C39A21CF65B4BDD1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		809D50BAF1CD0E977AD857653275357B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4D7940AD87C30C8F127A6E325764AB9 /* ZWEmoji.xcconfig */,
+				922E02D6C588BEC59764AD446AB97E89 /* ZWEmoji-dummy.m */,
+				033575AAA2999DC708A03B83C2B1A432 /* ZWEmoji-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZWEmoji";
+			sourceTree = "<group>";
+		};
+		DD46F7BC7E174B81C5122E1236B9F288 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19C56C6BFF6049D42F3F36AACC08144F /* ZWEmoji */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		53A49D60EC41C8FEAAC13C6430402629 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35D006921502CB9FE6128499A8256DF /* ZWEmoji.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BBDFFA729EA4D4320334F17283F5E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8903923D1ED2DA6DAA6C33228CCD51DC /* ZWEmoji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF10CFF66D068DDF682E358C7BA2433A /* Build configuration list for PBXNativeTarget "ZWEmoji" */;
+			buildPhases = (
+				53A49D60EC41C8FEAAC13C6430402629 /* Headers */,
+				1EC2957F0351026D4370B6A9F4E38A19 /* Sources */,
+				52C28245BED3C83CA0F63B36FB368039 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZWEmoji;
+			productName = ZWEmoji;
+			productReference = 6515D3C9B3378AA8A94EA26C4AD61BA9 /* libZWEmoji.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D91EB8945D9943814483711D5499F952 /* Pods-QLMarkdownGFM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F84512DC8259B83C562377539BA167E /* Build configuration list for PBXNativeTarget "Pods-QLMarkdownGFM" */;
+			buildPhases = (
+				C7BBDFFA729EA4D4320334F17283F5E0 /* Headers */,
+				A8D851B710FC53A327EDF79414B20E9F /* Sources */,
+				0E2C3673F0E149C961F6A8270DCF683E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFD005FD34210C63D8599529A070332C /* PBXTargetDependency */,
+			);
+			name = "Pods-QLMarkdownGFM";
+			productName = "Pods-QLMarkdownGFM";
+			productReference = 000F1BFAA4268074D26733140588E601 /* libPods-QLMarkdownGFM.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7C6FE31AADFA410F4889D911C3E5D5AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D91EB8945D9943814483711D5499F952 /* Pods-QLMarkdownGFM */,
+				8903923D1ED2DA6DAA6C33228CCD51DC /* ZWEmoji */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EC2957F0351026D4370B6A9F4E38A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0EBF2DD1E5B644A6ECB73FFC78E710D /* ZWEmoji-dummy.m in Sources */,
+				1B2C820DD308EF4CBA38250EF72B1824 /* ZWEmoji.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D851B710FC53A327EDF79414B20E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7EE94F3EE5F5B096092EDE903D284E /* Pods-QLMarkdownGFM-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFD005FD34210C63D8599529A070332C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZWEmoji;
+			target = 8903923D1ED2DA6DAA6C33228CCD51DC /* ZWEmoji */;
+			targetProxy = 705D4A424D19D9E14F75EB362FAC1AFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A7DB6C8A2D7D20EB5C9EE3749F91096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4CCF8C690BDAB5EC8616153218E591 /* Pods-QLMarkdownGFM.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7A20C4A6327EA11779032D4D0C5516D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4613DB21AFA6BDBB2A74A10F9DA2B8 /* Pods-QLMarkdownGFM.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		82AED2F529200D99FE80031874626DB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D7940AD87C30C8F127A6E325764AB9 /* ZWEmoji.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/ZWEmoji/ZWEmoji-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZWEmoji;
+				PRODUCT_NAME = ZWEmoji;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		97B26F869E2D137900E269BEF04EC4F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C7823343FD1834B654E2007B7E71DE51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CD924F12C5E5BFE79D4FFDB17122E6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D7940AD87C30C8F127A6E325764AB9 /* ZWEmoji.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/ZWEmoji/ZWEmoji-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZWEmoji;
+				PRODUCT_NAME = ZWEmoji;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B26F869E2D137900E269BEF04EC4F0 /* Debug */,
+				C7823343FD1834B654E2007B7E71DE51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F84512DC8259B83C562377539BA167E /* Build configuration list for PBXNativeTarget "Pods-QLMarkdownGFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7DB6C8A2D7D20EB5C9EE3749F91096 /* Debug */,
+				7A20C4A6327EA11779032D4D0C5516D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF10CFF66D068DDF682E358C7BA2433A /* Build configuration list for PBXNativeTarget "ZWEmoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD924F12C5E5BFE79D4FFDB17122E6D6 /* Debug */,
+				82AED2F529200D99FE80031874626DB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

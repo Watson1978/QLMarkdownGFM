@@ -1,15 +1,18 @@
 #import <Foundation/Foundation.h>
 #import "cmark.h"
 #import "core-extensions.h"
+#import "ZWEmoji.h"
 
 const char *extensions[] = { "table", "strikethrough", "autolink", "tagfilter", "tasklist" };
 
 NSData *renderHTML(NSURL *url)
 {
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    if (!data) {
+    NSString *content = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    if (!content) {
         return nil;
     }
+    NSString *replacedContent = [ZWEmoji emojify:content];
+    NSData *data = [replacedContent dataUsingEncoding:NSUTF8StringEncoding];
 
     int options = CMARK_OPT_DEFAULT | CMARK_OPT_GITHUB_PRE_LANG;
     core_extensions_ensure_registered();

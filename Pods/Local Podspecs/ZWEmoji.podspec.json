@@ -1,0 +1,22 @@
+{
+  "name": "ZWEmoji",
+  "version": "0.4.0",
+  "license": "MIT",
+  "summary": "Objective-C library for using unicode emoji based on emoji codes used in Campfire/GitHub",
+  "homepage": "https://github.com/zachwaugh/ZWEmoji",
+  "authors": {
+    "Zach Waugh": "zwaugh@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/zachwaugh/ZWEmoji.git",
+    "tag": "0.4.0"
+  },
+  "source_files": "lib",
+  "requires_arc": true,
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620210BDF8EEB16BEE534D29 /* libPods-QLMarkdownGFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6418EA6C4F01551C7DC91F /* libPods-QLMarkdownGFM.a */; };
 		A9493949207A37EE0086053A /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = A9493948207A37ED0086053A /* styles.css */; };
 		A993541E2079FD9300C69E0A /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = A993541C2079FD9200C69E0A /* markdown.h */; };
 		A993541F2079FD9300C69E0A /* markdown.m in Sources */ = {isa = PBXBuildFile; fileRef = A993541D2079FD9300C69E0A /* markdown.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		442ED45D569E2BE40D0580CC /* Pods-QLMarkdownGFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLMarkdownGFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLMarkdownGFM/Pods-QLMarkdownGFM.release.xcconfig"; sourceTree = "<group>"; };
+		7D6418EA6C4F01551C7DC91F /* libPods-QLMarkdownGFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QLMarkdownGFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9493948207A37ED0086053A /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
 		A993541C2079FD9200C69E0A /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
 		A993541D2079FD9300C69E0A /* markdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = markdown.m; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		A9EEB58620791BAB00898B01 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		A9EEB58820791BAB00898B01 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A9EEB58A20791BAB00898B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8F41773B8272957FBE9EE4 /* Pods-QLMarkdownGFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLMarkdownGFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLMarkdownGFM/Pods-QLMarkdownGFM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,18 +44,29 @@
 				A9935426207A01D900C69E0A /* WebKit.framework in Frameworks */,
 				A9EB9E9E207A51D800BAE9F7 /* libcmark-gfmextensions.a in Frameworks */,
 				A9EB9E9F207A51D800BAE9F7 /* libcmark-gfm.a in Frameworks */,
+				620210BDF8EEB16BEE534D29 /* libPods-QLMarkdownGFM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		687FAA189EA0E6623359BC91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F41773B8272957FBE9EE4 /* Pods-QLMarkdownGFM.debug.xcconfig */,
+				442ED45D569E2BE40D0580CC /* Pods-QLMarkdownGFM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A99354202079FE1900C69E0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A9EB9E9D207A51D800BAE9F7 /* libcmark-gfm.a */,
 				A9EB9E9C207A51D800BAE9F7 /* libcmark-gfmextensions.a */,
 				A9935425207A01D900C69E0A /* WebKit.framework */,
+				7D6418EA6C4F01551C7DC91F /* libPods-QLMarkdownGFM.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -62,6 +77,7 @@
 				A9EEB58320791BAB00898B01 /* QLMarkdownGFM */,
 				A9EEB58220791BAB00898B01 /* Products */,
 				A99354202079FE1900C69E0A /* Frameworks */,
+				687FAA189EA0E6623359BC91 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +121,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9EEB58D20791BAB00898B01 /* Build configuration list for PBXNativeTarget "QLMarkdownGFM" */;
 			buildPhases = (
+				BA52E02D81F40CE4F1BBDF2A /* [CP] Check Pods Manifest.lock */,
 				A9EEB57C20791BAB00898B01 /* Sources */,
 				A9EEB57D20791BAB00898B01 /* Frameworks */,
 				A9EEB57E20791BAB00898B01 /* Headers */,
@@ -160,6 +177,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA52E02D81F40CE4F1BBDF2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QLMarkdownGFM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9EEB57C20791BAB00898B01 /* Sources */ = {
@@ -287,6 +329,7 @@
 		};
 		A9EEB58E20791BAB00898B01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE8F41773B8272957FBE9EE4 /* Pods-QLMarkdownGFM.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -306,6 +349,7 @@
 		};
 		A9EEB58F20791BAB00898B01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 442ED45D569E2BE40D0580CC /* Pods-QLMarkdownGFM.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
