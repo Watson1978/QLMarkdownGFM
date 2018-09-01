@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		620210BDF8EEB16BEE534D29 /* libPods-QLMarkdownGFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6418EA6C4F01551C7DC91F /* libPods-QLMarkdownGFM.a */; };
+		9044FA23FF8A0EB6A982BAA2 /* libPods-QLMarkdownGFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6418EA6C4F01551C7DC91F /* libPods-QLMarkdownGFM.a */; };
 		A9493949207A37EE0086053A /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = A9493948207A37ED0086053A /* styles.css */; };
+		A9789C08213A86C70077C0D4 /* libcmark-gfm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EB9E9D207A51D800BAE9F7 /* libcmark-gfm.a */; };
+		A9789C0A213A86C70077C0D4 /* libcmark-gfm-extensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9789C09213A86C70077C0D4 /* libcmark-gfm-extensions.a */; };
 		A993541E2079FD9300C69E0A /* markdown.h in Headers */ = {isa = PBXBuildFile; fileRef = A993541C2079FD9200C69E0A /* markdown.h */; };
 		A993541F2079FD9300C69E0A /* markdown.m in Sources */ = {isa = PBXBuildFile; fileRef = A993541D2079FD9300C69E0A /* markdown.m */; };
 		A9935426207A01D900C69E0A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9935425207A01D900C69E0A /* WebKit.framework */; };
-		A9EB9E9E207A51D800BAE9F7 /* libcmark-gfmextensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EB9E9C207A51D800BAE9F7 /* libcmark-gfmextensions.a */; };
-		A9EB9E9F207A51D800BAE9F7 /* libcmark-gfm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EB9E9D207A51D800BAE9F7 /* libcmark-gfm.a */; };
 		A9EEB58520791BAB00898B01 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEB58420791BAB00898B01 /* GenerateThumbnailForURL.m */; };
 		A9EEB58720791BAB00898B01 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEB58620791BAB00898B01 /* GeneratePreviewForURL.m */; };
 		A9EEB58920791BAB00898B01 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A9EEB58820791BAB00898B01 /* main.c */; };
@@ -23,6 +23,7 @@
 		442ED45D569E2BE40D0580CC /* Pods-QLMarkdownGFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLMarkdownGFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLMarkdownGFM/Pods-QLMarkdownGFM.release.xcconfig"; sourceTree = "<group>"; };
 		7D6418EA6C4F01551C7DC91F /* libPods-QLMarkdownGFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QLMarkdownGFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9493948207A37ED0086053A /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		A9789C09213A86C70077C0D4 /* libcmark-gfm-extensions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcmark-gfm-extensions.a"; path = "cmark/lib/libcmark-gfm-extensions.a"; sourceTree = "<group>"; };
 		A993541C2079FD9200C69E0A /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
 		A993541D2079FD9300C69E0A /* markdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = markdown.m; sourceTree = "<group>"; };
 		A9935425207A01D900C69E0A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -41,10 +42,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9789C0A213A86C70077C0D4 /* libcmark-gfm-extensions.a in Frameworks */,
+				A9789C08213A86C70077C0D4 /* libcmark-gfm.a in Frameworks */,
 				A9935426207A01D900C69E0A /* WebKit.framework in Frameworks */,
-				A9EB9E9E207A51D800BAE9F7 /* libcmark-gfmextensions.a in Frameworks */,
-				A9EB9E9F207A51D800BAE9F7 /* libcmark-gfm.a in Frameworks */,
-				620210BDF8EEB16BEE534D29 /* libPods-QLMarkdownGFM.a in Frameworks */,
+				9044FA23FF8A0EB6A982BAA2 /* libPods-QLMarkdownGFM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +64,7 @@
 		A99354202079FE1900C69E0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9789C09213A86C70077C0D4 /* libcmark-gfm-extensions.a */,
 				A9EB9E9D207A51D800BAE9F7 /* libcmark-gfm.a */,
 				A9EB9E9C207A51D800BAE9F7 /* libcmark-gfmextensions.a */,
 				A9935425207A01D900C69E0A /* WebKit.framework */,

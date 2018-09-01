@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
-#import "cmark.h"
-#import "core-extensions.h"
+#import "cmark-gfm.h"
+#import "cmark-gfm-core-extensions.h"
 #import "ZWEmoji.h"
 
 const char *extensions[] = { "table", "strikethrough", "autolink", "tagfilter", "tasklist" };
@@ -15,7 +15,7 @@ NSData *renderHTML(NSURL *url)
     NSData *data = [replacedContent dataUsingEncoding:NSUTF8StringEncoding];
 
     int options = CMARK_OPT_DEFAULT | CMARK_OPT_GITHUB_PRE_LANG;
-    core_extensions_ensure_registered();
+    cmark_gfm_core_extensions_ensure_registered();
 
     cmark_mem *mem = cmark_get_default_mem_allocator();
     cmark_parser *parser = cmark_parser_new_with_mem(options, mem);
