@@ -10,7 +10,7 @@ git checkout -b tasklist origin/tasklist
 mkdir build
 cd build
 
-cmake -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="$PROJECT_DIR/cmark" -DCMAKE_OSX_ARCHITECTURES="x86_64;i386" -DCMAKE_OSX_DEPLOYMENT_TARGET="10.11" ..
+cmake -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="$PROJECT_DIR/cmark" -DCMAKE_OSX_ARCHITECTURES="x86_64" -DCMAKE_OSX_DEPLOYMENT_TARGET="10.11" ..
 make -j
 make install
 
