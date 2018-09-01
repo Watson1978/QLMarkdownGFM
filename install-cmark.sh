@@ -1,6 +1,8 @@
 #!/bin/bash
 
 PROJECT_DIR=`pwd`
+rm -rf $PROJECT_DIR/cmark
+
 cd /tmp
 
 git clone git@github.com:Watson1978/cmark.git
