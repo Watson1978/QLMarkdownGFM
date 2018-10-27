@@ -12,6 +12,8 @@ Thumbnail | Preview
 
 ## Installation
 
+If you have been used other QuickLook plugin, please remove it before (See https://github.com/Watson1978/QLMarkdownGFM/issues/3).
+
 ### By homebrew-cask
 
 If you use [homebrew-cask](https://github.com/Homebrew/homebrew-cask), you can install this by following command.
