@@ -5,9 +5,8 @@ rm -rf $PROJECT_DIR/cmark
 
 cd /tmp
 
-git clone git@github.com:Watson1978/cmark.git
-cd cmark
-git checkout -b tasklist origin/tasklist
+git clone https://github.com/github/cmark-gfm.git
+cd cmark-gfm
 
 mkdir build
 cd build
