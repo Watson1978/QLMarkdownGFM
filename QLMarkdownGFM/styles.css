@@ -164,20 +164,3 @@ pre code {
 li {
     margin-left: 0;
 }
-
-.task-list-item {
-    list-style-type: none;
-    margin-left: -1.5em;
-}
-
-.task-list-item .task-list-item {
-    margin: 0;
-}
-
-.task-list-item ul li {
-    margin-left: 1em;
-}
-
-input[type=checkbox] {
-    margin-right: 8px;
-}
