@@ -49,6 +49,7 @@ NSData *renderHTML(NSURL *url)
                       "</body>\n"
                       "</html>",
                       styles, url, [NSString stringWithUTF8String:output]];
+    html = [html stringByReplacingOccurrencesOfString:@"<li><input" withString:@"<li class='task-list-item'><input"];
 
     free(output);
     cmark_parser_free(parser);
