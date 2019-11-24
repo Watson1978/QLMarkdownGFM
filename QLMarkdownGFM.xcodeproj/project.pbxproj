@@ -337,8 +337,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE8F41773B8272957FBE9EE4 /* Pods-QLMarkdownGFM.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3E97Y6CS78;
 				HEADER_SEARCH_PATHS = cmark/include;
 				INFOPLIST_FILE = QLMarkdownGFM/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
@@ -349,6 +351,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.QLMarkdownGFM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Debug;
@@ -357,8 +360,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 442ED45D569E2BE40D0580CC /* Pods-QLMarkdownGFM.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3E97Y6CS78;
 				HEADER_SEARCH_PATHS = cmark/include;
 				INFOPLIST_FILE = QLMarkdownGFM/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
@@ -369,6 +374,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.cat-soft.QLMarkdownGFM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Release;
