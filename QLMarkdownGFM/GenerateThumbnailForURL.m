@@ -1,6 +1,5 @@
 #import <Cocoa/Cocoa.h>
 #import <QuickLook/QuickLook.h>
-#import <WebKit/WebKit.h>
 #import "markdown.h"
 
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize);
