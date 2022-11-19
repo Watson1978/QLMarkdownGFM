@@ -19,7 +19,8 @@ If you have been used other QuickLook plugin, please remove it before (See https
 If you use [homebrew-cask](https://github.com/Homebrew/homebrew-cask), you can install this by following command.
 
 ```
-$ brew cask install https://raw.githubusercontent.com/Watson1978/QLMarkdownGFM/master/qlmarkdown-gfm.rb
+$ brew tap Watson1978/formula
+$ brew install --cask QLMarkdownGFM
 ```
 
 ### By manual
