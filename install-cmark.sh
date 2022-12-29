@@ -1,11 +1,13 @@
 #!/bin/bash
 
+CMARK_VERSION_TAG="0.29.0.gfm.6"
+
 PROJECT_DIR=`pwd`
 rm -rf $PROJECT_DIR/cmark
 
 cd /tmp
 
-git clone https://github.com/github/cmark-gfm.git
+git clone https://github.com/github/cmark-gfm.git --branch $CMARK_VERSION_TAG --depth 1
 cd cmark-gfm
 
 mkdir build
