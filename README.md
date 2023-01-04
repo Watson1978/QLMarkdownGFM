@@ -20,7 +20,14 @@ If you use [homebrew-cask](https://github.com/Homebrew/homebrew-cask), you can i
 
 ```
 $ brew tap Watson1978/formula
-$ brew install --cask QLMarkdownGFM
+$ brew install --cask watson1978/formula/qlmarkdowngfm
+```
+
+To uninstall,
+
+```
+$ brew uninstall --cask watson1978/formula/qlmarkdowngfm
+$ brew untap Watson1978/formula
 ```
 
 ### By manual
