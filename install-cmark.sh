@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CMARK_VERSION_TAG="0.29.0.gfm.6"
+CMARK_VERSION_TAG="0.29.0.gfm.13"
 
 PROJECT_DIR=`pwd`
 rm -rf $PROJECT_DIR/cmark
