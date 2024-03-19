@@ -338,7 +338,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 3E97Y6CS78;
-				HEADER_SEARCH_PATHS = cmark/include;
+				HEADER_SEARCH_PATHS = (
+					cmark/include,
+					Pods/ZWEmoji/lib,
+				);
 				INFOPLIST_FILE = QLMarkdownGFM/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				LIBRARY_SEARCH_PATHS = (
@@ -363,7 +366,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 3E97Y6CS78;
-				HEADER_SEARCH_PATHS = cmark/include;
+				HEADER_SEARCH_PATHS = (
+					cmark/include,
+					Pods/ZWEmoji/lib,
+				);
 				INFOPLIST_FILE = QLMarkdownGFM/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				LIBRARY_SEARCH_PATHS = (
