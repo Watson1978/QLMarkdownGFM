@@ -4,6 +4,10 @@
 
 QLMarkdownGFM is macOS Quick Look plugin for Github Flavored Markdown. This renders a thumbnail or preview using [github/cmark](https://github.com/github/cmark).
 
+> [!IMPORTANT]  
+> This plugin does not work since macOS 15, because it deprecates Quick Look Generator plugins.
+> https://developer.apple.com/documentation/macos-release-notes/macos-15-release-notes#Quick-Look
+
 Here is QLMarkdownGFM screenshots.
 
 Thumbnail | Preview
